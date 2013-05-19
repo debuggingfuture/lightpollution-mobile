@@ -23,6 +23,15 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <!--
+        <script type="text/javascript" src="cordova-2.7.0.js"></script>
+        -->
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.3.1/jquery.mobile.theme-1.3.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+        
         <title>Hello World</title>
     </head>
     <body>
@@ -36,19 +45,64 @@
         </div>
         -->
         
-        <script type="text/javascript" src="cordova-2.7.0.js"></script>
+        
         
         <!--
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
-        -->
+        
         
         Light Pollution App
         <br/><br/>
         <button onclick="alert('action 1 clicked');">Action 1</button><br/>
         <button onclick="alert('action 2 clicked');">Action 2</button><br/>
+        -->
+        
+        <div data-role="page" data-theme="a" id="Client_Redeem">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" style="border: 0px; background-color: #cccccc;">
+                
+                <center>
+                Light Pollution
+                </center>
+                
+                <!--
+                <a id="Redeem_backButton" class='ui-btn-left' data-icon='arrow-l' data-rel='back'>返回</a>
+            	-->
+            </div>
+            <div id="Redeem_content" data-role="content" data-theme="a" style="padding: 0px;">
+                <ul data-theme="a" data-role="listview" data-inset='true' data-dividertheme="a" style='margin: 5px;'>
+                    <li data-theme="a" data-role='list-divider'>
+                        Light Pollution
+                    </li>
+                    <li data-theme="a">
+                        <a href="#" onclick="alert('250 marks');">Take Photo</a>
+                    </li>
+                    <li data-theme="a">
+                        <a href="#" onclick="alert('500 marks');">From Ablum</a>
+                    </li>
+                </ul>
+                <br/>
+                <!--<center><a id="Redeem_LogoutButton" data-icon='delete' data-direction="reverse">登出</a></center>-->
+            
+            </div>
+<!--            <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#Client_Index" data-transition="none" data-theme="d"><img src="images/forkicon.png" style="width: 15px; vertical-align: middle;" /><span style="vertical-align: middle;">餐廳</span></a></li>    
+                        <li><a href="" data-transition="none" data-theme="d" class="ui-btn-active ui-state-persist"><img src="images/accounticon.png" style="width: 15px; vertical-align: middle;" /><span style="vertical-align: middle;">帳戶</span></a></li>
+                    </ul>
+                </div>
+            </div>-->
+            <script>
+                try {
+                    
+                } catch(e) {
+                    alert(e);
+                }
+            </script>
+        </div>
         
     </body>
 </html>
